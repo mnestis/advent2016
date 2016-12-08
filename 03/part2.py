@@ -14,13 +14,9 @@ def count_triangles(input_string):
             
             rows.append((a, b, c))
 
-    print rows[-3:]
-
     triangles = []
     for i in range(0, len(rows), 3):
         triangles.extend(zip(*rows[i:i+3]))
-
-    print triangles[-3:]
 
     for a, b, c in triangles:
         if a + b <= c:
