@@ -36,7 +36,3 @@ if __name__=="__main__":
     input_string = open("input.txt", "r").read()
 
     print len(decompress_text(input_string))
-    print "ADVENT", decompress_text("ADVENT")
-    print "A(1x5)BC", decompress_text("A(1x5)BC")
-    print "(3x3)XYZ", decompress_text("(3x3)XYZ")
-    print "A(2x2)BCD(2x2)EFG", decompress_text("A(2x2)BCD(2x2)EFG")
